@@ -1,0 +1,7 @@
+<h2>https://www.internate.org posts as word count maps:</h2>
+<div class="card" *ngFor="let post of posts">
+  <div class="card-body">
+    <p class="card-title">ID: {{ post.id }}, dateTime: {{ post.dateTime | date:'medium' }}, title: {{ post.title }}, link: {{ post.link }}</p>
+    <p class="card-text"><span style="margin-right:5px;" class="badge bg-primary" *ngFor="let wordCount of post.wordCountMap | keyvalue">word: {{ wordCount.key }} | count: {{ wordCount.value }}</span></p>
+  </div>
+</div>
