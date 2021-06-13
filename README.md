@@ -9,7 +9,7 @@
 
 ## how to start
 
-1. clone repository `https://github.com/sebastianstemmer/the-key.git`
+1. clone repository `git clone https://github.com/sebastianstemmer/the-key.git`
 2. backend
 * enter folder `cd the-key-backend`
 * run application `mvn spring-boot:run`
